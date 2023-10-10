@@ -1,0 +1,79 @@
+@import "../Sass/variable";
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  .logo {
+    color: $primary-color;
+    padding-left: 30px;
+  }
+  .nav-links {
+    display: flex;
+    li {
+      list-style: none;
+      margin-right: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
+      padding-top: 9px;
+      padding-bottom: 6px;
+      border-radius: 20px;
+    }
+    li:hover {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+  div {
+    display: none;
+    .btn {
+      background-color: white;
+      border: none;
+    }
+  }
+}
+
+@media (max-width: 780px) {
+  .nav {
+    background-color: white;
+    .nav-links {
+      display: none;
+    }
+    .nav-mobile {
+      position: absolute;
+      top: 40px;
+      right: 0px;
+      left: 0;
+      transition: all 0.9s ease-out;
+      width: 100;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 5;
+      background-color: white;
+      text-align: center;
+      padding-right: 23px;
+      .isMobile {
+        margin-top: 25px;
+      }
+      li {
+        display: block;
+        text-align: center;
+        list-style: none;
+        transition: all 0.5s ease;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 25px;
+      }
+      li:hover {
+        background-color: $primary-color;
+        color: white;
+      }
+    }
+    div {
+      display: block;
+      margin-top: 21px;
+      margin-right: 21px;
+    }
+  }
+}
