@@ -6,18 +6,20 @@ import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 function Menubar() {
   const [isMobile, setIsMobile] = useState(false);
 
-  const handleNav = () => {
-    setIsMobile(!isMobile);
-  };
-
   return (
     <>
       <div
-        style={{ position: "fixed", width: "100%", backgroundColor: "white" }}
+        className="shadoww"
+        style={{
+          position: "fixed",
+          width: "100%",
+          backgroundColor: "white",
+          zIndex: 5,
+        }}
       >
-        <nav className="nav">
-          <h2 className="logo">MUKESH</h2>
-          <ul className={isMobile ? "nav-mobile" : "nav-links"}>
+        <nav className="nav container-lg">
+          <h2 className="logo"></h2>
+          <ul className={`${isMobile ? "nav-mobile" : "nav-links"} mt-md-3`}>
             <li className="isMobile nav-bot">
               <a href="#home" aria-current="page">
                 HOME
@@ -45,7 +47,10 @@ function Menubar() {
             </li>
           </ul>
           <div>
-            <button className="btn" onClick={handleNav}>
+            <button
+              className="btn isMobile-btn"
+              onClick={() => setIsMobile(!isMobile)}
+            >
               {isMobile ? (
                 <FontAwesomeIcon icon={faTimes} color="#0B77FB" size="2x" />
               ) : (
@@ -56,26 +61,32 @@ function Menubar() {
         </nav>
       </div>
 
-      <div
-        style={{
-          position: "absolute",
-          zIndex: -1,
-          width: "100%",
-          paddingTop: "100px",
-        }}
-      >
-        
-        <div className="container" id="home" style={{ marginBottom: "700px" }}>
-          <div className="row d-flex justify-content-between align-items-center 100vh">
-          <h1>Home</h1>
+      <div className="pt-5"></div>
+
+   <div style={{backgroundColor:'#FAFAFA'}}>
+
+      <div className="container" id="home">
+        <div class="row d-flex justify-content-between align-items-center mx-lg-5 vh">
+          <div class="col-md-6 d-lg-flex justify-content-center">
+            <div>
+              <h1 className="text-bold text-center">HEY, I'M MUKESH </h1>
+              <p className="text-center my-4 text">
+              A passionate Frontend Web Developer, with a focus on React JS. I create interactive and user-friendly Web Apps that meet your needs and deliver exceptional user experience.
+              </p>
+              <div className="d-flex justify-content-center">
+              <button className="btn text-bold mt-2">DOWNLOAD RESUME</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 d-lg-flex justify-content-center">
+            <div>
+              <h1>Hi I'm Mukesh </h1>{" "}
+            </div>
           </div>
         </div>
-        <div id="about" style={{ marginTop: "700px" }}>
-          <h1>About</h1>
-        </div>
-        <div id="service" style={{ marginTop: "700px" }}>
-          <h1>Service</h1>
-        </div>
+      </div>
+
       </div>
     </>
   );

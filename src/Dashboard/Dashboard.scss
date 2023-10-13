@@ -1,35 +1,34 @@
 @import "../Sass/variable";
 
+.shadoww {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 .nav {
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   .logo {
-    color: $primary-color;
     padding-left: 30px;
+    padding-top: 10px;
   }
   .nav-links {
     display: flex;
-    align-items: center;
+    li {
+      list-style: none;
+    }
     li a {
+      color: black;
       font-weight: bold;
       text-decoration: none;
-      margin-right: 10px;
+      margin-right: 6px;
       padding-right: 20px;
       padding-left: 20px;
-      padding-top: 7px;
-      padding-bottom: 8px;
+      padding-top: 9px;
+      padding-bottom: 6px;
       border-radius: 20px;
-      color: black;
     }
     li a:hover {
       color: $primary-color;
-    }
-    li a:active {
-      color: $primary-color;
-    }
-    li {
-      list-style: none;
     }
   }
   div {
@@ -41,15 +40,23 @@
   }
 }
 
-@media (max-width: 780px) {
+.vh {
+  height: 80vh;
+}
+
+@media (max-width: 425px) {
   .nav {
     background-color: white;
+    .logo {
+      padding-top: 20px;
+      padding-left: 15px;
+    }
     .nav-links {
       display: none;
     }
     .nav-mobile {
       position: absolute;
-      top: 40px;
+      top: 65px;
       right: 0px;
       left: 0;
       transition: all 0.9s ease-out;
@@ -57,8 +64,9 @@
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       z-index: 5;
       background-color: white;
-      padding-bottom: 5px;
+      text-align: center;
       padding-right: 23px;
+      padding-bottom: 10px;
       .isMobile {
         margin-top: 25px;
       }
@@ -66,23 +74,19 @@
       //   border-bottom: 0.5px solid #dfdfdf;
       // }
       li {
-        font-weight: bold;
-        display: block;
-        text-align: center;
         list-style: none;
+        display: block;
         transition: all 0.5s ease;
-        margin-top: 4px;
-        margin-bottom: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
         padding-top: 10px;
-        padding-bottom: 15px;
-        width: 100%;
+        padding-bottom: 10px;
       }
       li a {
         text-decoration: none;
-        padding-top: 7px;
-        padding-bottom: 8px;
-        border-radius: 20px;
+        text-align: center;
         color: black;
+        font-weight: bold;
       }
       li a:hover {
         color: $primary-color;
@@ -90,10 +94,28 @@
     }
     div {
       display: block;
-      margin-top: 21px;
-      margin-right: 21px;
+      margin-top: 12px;
+      padding-bottom: 10px;
     }
   }
+}
 
-  
+//-----------------------------------------------------
+
+.btn {
+  background-color: $primary-color;
+  color: white
+}
+
+.btn:hover {
+  background-color: $primary-color;
+  color: white
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text {
+  font-size: 18px;
 }
