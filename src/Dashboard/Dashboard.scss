@@ -41,10 +41,10 @@
 }
 
 .vh {
-  height: 80vh;
+  // height: 90vh;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .nav {
     background-color: white;
     .logo {
@@ -102,9 +102,16 @@
 
 //-----------------------------------------------------
 
+.custom-line {
+  border-bottom: 5px solid $primary-color;
+  border-radius: 20px;
+  width: 50px ;
+  margin: auto;
+}
+
 .btn {
   background-color: $primary-color;
-  color: white
+  color: white;
 }
 
 .btn:hover {
@@ -116,6 +123,9 @@
   font-weight: bold;
 }
 
-.text {
-  font-size: 18px;
+
+
+.text-grey {
+  color: #666666;
 }
+
