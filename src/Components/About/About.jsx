@@ -1,15 +1,9 @@
 import React from "react";
-import { saveAs } from "file-saver";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import resume from '../../assets/Mukesh-Software-Developer.pdf';
 
 function About() {
-  const handleDownloadPDF = () => {
-    const pdfUrl = "https://example.com/path/to/your/pdf-file.pdf";
-
-    saveAs(pdfUrl, "example.pdf");
-  };
-
   return (
     <>
       <div className="pt-md-5"></div>
@@ -36,13 +30,14 @@ function About() {
               with my skills and experience, please{" "}
               <span className="text-bold">Contact</span> me.
             </p>
+            <a href={resume} download="Mukesh">
             <button
               className="btn text-bold mt-3 mb-5"
-              onClick={handleDownloadPDF}
-            >
+            > 
               DOWNLOAD RESUME{" "}
-              <FontAwesomeIcon icon={faDownload} style={{ marginLeft: 5 }} />
+              <FontAwesomeIcon icon={faDownload} style={{ marginLeft: 5 }} /> 
             </button>
+            </a>
           </div>
 
           <div className="col-md-5 mt-md-5 ">
