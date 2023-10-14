@@ -1,6 +1,15 @@
 import React from "react";
+import { saveAs } from "file-saver";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 function About() {
+  const handleDownloadPDF = () => {
+    const pdfUrl = "https://example.com/path/to/your/pdf-file.pdf";
+
+    saveAs(pdfUrl, "example.pdf");
+  };
+
   return (
     <>
       <div className="pt-md-5"></div>
@@ -10,7 +19,7 @@ function About() {
         <div className="row d-flex justify-content-between align-items-start pt-4">
           <div className="col-md-6 mt-md-5 mt-4 ">
             <h5 className="text-bold mb-2">Get to know me</h5>
-            <p className="text-grey mt-3">
+            <p className="text-grey mt-3 text">
               I possess <span className="text-bold">1 Year and 3 Months</span>{" "}
               of professional experience working as a{" "}
               <span className="text-bold">Frontend Web Developer.</span> During
@@ -18,7 +27,7 @@ function About() {
               small business websites to intricate{" "}
               <span className="text-bold"> Web Apps.</span>
             </p>{" "}
-            <p className="mt-2 text-grey">
+            <p className="mt-2 text-grey text">
               {" "}
               I adeptly craft intuitive, visually appealing UI from client
               requirements. Actively, I am in search of{" "}
@@ -27,12 +36,18 @@ function About() {
               with my skills and experience, please{" "}
               <span className="text-bold">Contact</span> me.
             </p>
-            <button className="btn text-bold mt-3 mb-5">DOWNLOAD RESUME</button>
+            <button
+              className="btn text-bold mt-3 mb-5"
+              onClick={handleDownloadPDF}
+            >
+              DOWNLOAD RESUME{" "}
+              <FontAwesomeIcon icon={faDownload} style={{ marginLeft: 5 }} />
+            </button>
           </div>
 
           <div className="col-md-5 mt-md-5 ">
             <h5 className="text-bold mb-2">Education</h5>
-            <p className="text-grey mt-3">
+            <p className="text-grey mt-3 text">
               Graduated{" "}
               <span className="text-bold">
                 Bachelors in Mechanical Engineering
@@ -41,7 +56,7 @@ function About() {
               University with <span className="text-bold">7.89 CGPA</span> on
               July 2022.
             </p>
-            <p className="text-grey">
+            <p className="text-grey text">
               Completed my 12th class with 60.4% on April 2018 and 10th class
               with 76.4% on April 2016 at SM.SM highier secondary school,
               TamilNadu.

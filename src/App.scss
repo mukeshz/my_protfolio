@@ -1,5 +1,11 @@
 @import '../src/Sass/variable';
 
+@media (max-width: 425px) {
+  .text {
+    font-size: 14px;
+  }
+}
+
 .custom-line {
     border-bottom: 5px solid $primary-color;
     border-radius: 20px;

@@ -7,10 +7,15 @@
 .input {
   border: none;
   outline: none;
+  box-shadow: none;
   background-color: #ededed;
   padding-left: 8px;
 }
 
 .msg {
   padding-bottom: 100px !important;
+}
+
+.label {
+  font-weight: 600;
 }
