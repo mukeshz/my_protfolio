@@ -3,10 +3,6 @@ import "./Contact.scss";
 
 function Contact() {
 
-  const handleMsg = (e) => {
-    e.preventDefault()
-  }
-
   return (
     <>
       <div className="pt-md-4"></div>
