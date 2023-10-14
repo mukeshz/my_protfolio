@@ -1,0 +1,11 @@
+.arrow-icon {
+    margin-left: 5px;
+}
+
+.live-link:hover {
+    color: #320593;
+    .arrow-icon {
+    scale: 1.1;
+    transition: 1s ease;
+    }
+}
