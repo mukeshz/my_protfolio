@@ -27,7 +27,7 @@ function Menubar() {
         }}
       >
         <nav className="nav container-lg">
-          <div className="d-flex align-items-center text-color"><h5 className="logo text-bold">HIRE ME</h5></div>
+          <div className="d-flex align-items-center text-color"><h5 className="logo text-bold">&lt;WebDev /&gt;</h5></div>
           <ul className={`${isMobile ? "nav-mobile" : "nav-links"} mt-md-3`}>
             <li className="isMobile nav-bot">
               <a href="#home" aria-current="page" >
