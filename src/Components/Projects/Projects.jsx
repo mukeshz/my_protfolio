@@ -26,7 +26,7 @@ function Projects() {
       img: netflix,
       name: "NETFLIX CLONE",
       detail:
-        "I developed a Netflix clone using React.js, Bootstrap, and Material UI, showcasing my proficiency in front-end development and design.",
+        "I developed a Netflix clone using React.js, Bootstrap, SASS and MUI showcasing my proficiency in front-end development and design.",
       link: "https://netflix-clone-7zru.onrender.com/",
     },
   ];
