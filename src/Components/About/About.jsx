@@ -1,7 +1,7 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
-import resume from '../../assets/Mukesh-Software-Developer.pdf';
+import resume from '../../assets/Mukesh.pdf';
 
 function About() {
   return (
@@ -30,7 +30,7 @@ function About() {
               with my skills and experience, please{" "}
               <span className="text-bold">Contact</span> me.
             </p>
-            <a href={resume} download="Mukesh">
+            <a href={resume} download="Mukesh-Software-Developer">
             <button
               className="btn text-bold mt-3 mb-5"
             > 

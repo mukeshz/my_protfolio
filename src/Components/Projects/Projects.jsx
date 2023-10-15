@@ -13,23 +13,23 @@ function Projects() {
       name: "ISKCON KANYAKUMARI",
       detail:
         "Temple management website, logged-in admins only add, edit, and delete contents. Integrated Redux for multi-languages and authentication.",
-      link: 'https://iskcon-kanyakumari-fc9dd.web.app/'
+      link: "https://iskcon-kanyakumari-fc9dd.web.app/",
     },
     {
       img: archover,
       name: "ARCHOVER SOLUTIONS",
       detail:
         "It is a consultancy services company website designed and developed in ReactJS with bootstrap for the responsive and user friendly interface.",
-      link: 'https://archover-solutions-8ecb3.web.app/'
+      link: "https://archover-solutions-8ecb3.web.app/",
     },
     {
       img: netflix,
       name: "NETFLIX CLONE",
       detail:
         "I developed a Netflix clone using React.js, Bootstrap, and Material UI, showcasing my proficiency in front-end development and design.",
-    ink: 'https://netflix-clone-7zru.onrender.com/'
+      link: "https://netflix-clone-7zru.onrender.com/",
     },
-  ]
+  ];
 
   return (
     <>
@@ -50,12 +50,12 @@ function Projects() {
                   {item.name}
                 </p>
                 <p className="text-center text text-grey px-1">{item.detail}</p>
-                <p className="text-bold text-center text-color live-link" onClick={() => {
-                    window.open(
-                      `${item.link}`,
-                      "_blank"
-                    );
-                  }}>
+                <p
+                  className="text-bold text-center text-color live-link"
+                  onClick={() => {
+                    window.open(`${item.link}`, "_blank");
+                  }}
+                >
                   Checkout Live{" "}
                   <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" />
                 </p>
