@@ -14,7 +14,7 @@ function About() {
           <div className="col-md-6 mt-md-5 mt-4 ">
             <h5 className="text-bold mb-2">Get to know me</h5>
             <p className="text-grey mt-3 text">
-              I possess <span className="text-bold">1 Year and 3 Months</span>{" "}
+              I possess <span className="text-bold">10 Months</span>{" "}
               of professional experience working as a{" "}
               <span className="text-bold">Frontend Web Developer.</span> During
               this period, I collaborated on diverse projects, encompassing

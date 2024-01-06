@@ -18,15 +18,15 @@ function Skills() {
     { img: html, name: "Html" },
     { img: css, name: "CSS" },
     { img: js, name: "Javascript" },
-    { img: ts, name: "Typescript" },
     { img: bootstrap, name: "Bootstrap" },
     { img: react, name: "React" },
-    { img: mui, name: "Material UI" },
-    { img: redux, name: "Redux" },
-    { img: jest, name: "Jest" },
     { img: git, name: "Git" },
     { img: api, name: "API" },
     { img: postman, name: "Postman" },
+    //{ img: ts, name: "Typescript" },
+    //{ img: mui, name: "Material UI" },
+    //{ img: redux, name: "Redux" },
+    //{ img: jest, name: "Jest" },
   ];
 
   return (
