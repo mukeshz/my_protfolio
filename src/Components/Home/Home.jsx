@@ -44,7 +44,7 @@ function Home() {
                     );
                   }}
                 />
-                <FontAwesomeIcon
+                {/* <FontAwesomeIcon
                   icon={faInstagram}
                   className="icon"
                   onClick={() => {
@@ -53,10 +53,10 @@ function Home() {
                       "_blank"
                     );
                   }}
-                />
+                /> */}
                 <FontAwesomeIcon
                   icon={faWhatsapp}
-                  className="icon mx-2"
+                  className="icon"
                   onClick={() => {
                     window.open(
                       "https://api.whatsapp.com/send?phone=919488426920",
