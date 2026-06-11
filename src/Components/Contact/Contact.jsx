@@ -7,7 +7,7 @@ function Contact() {
     <>
       <div className="pt-md-4"></div>
       <div className="container-md pb-5" id="about">
-        <h1 className="text-bold pt-5 pt-lg-5 text-center pb-1">CONTACT</h1>
+        <h1 className="text-bold pt-5 pt-lg-5 text-center pb-1">CONTACT US</h1>
         <div className="custom-line" />
         <div className="mt-md-5 mt-4 py-3 d-flex justify-content-center align-items-center">
           <form

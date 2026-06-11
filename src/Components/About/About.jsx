@@ -8,53 +8,40 @@ function About() {
     <>
       <div className="pt-md-5"></div>
       <div className="container-md">
-        <h1 className="text-bold pt-5 text-center pb-1">ABOUT ME</h1>
+        <h1 className="text-bold pt-5 text-center pb-1">ABOUT</h1>
         <div className="custom-line" />
         <div className="row d-flex justify-content-between align-items-start pt-4">
           <div className="col-md-6 mt-md-5 mt-4 ">
-            <h5 className="text-bold mb-2">Get to know me</h5>
+            <h5 className="text-bold mb-2">Get to know</h5>
             <p className="text-grey mt-3 text">
-              I possess <span className="text-bold">10 Months</span>{" "}
-              of professional experience working as a{" "}
-              <span className="text-bold">Frontend Web Developer.</span> During
-              this period, I collaborated on diverse projects, encompassing
-              small business websites to intricate{" "}
-              <span className="text-bold"> Web Apps.</span>
+              Welcome to <span className="text-bold">Miss-T Stationary</span>{" "}, your trusted destination for quality stationery and office supplies.
+Proudly managed by <span className="text-bold">Thara</span>{" "}, our shop is dedicated to providing products that support learning, creativity, and productivity.
             </p>{" "}
             <p className="mt-2 text-grey text">
               {" "}
-              I adeptly craft intuitive, visually appealing UI from client
-              requirements. Actively, I am in search of{" "}
-              <span className="text-bold">Job</span> opportunities to
-              contribute, learn, and advance. If a suitable opportunity aligns
-              with my skills and experience, please{" "}
-              <span className="text-bold">Contact</span> me.
+              We offer a wide range of notebooks, pens, art materials, school supplies, and office essentials.
+Our goal is to deliver high-quality products at affordable prices for students, professionals, and businesses.
+We believe in excellent customer service and building long-lasting relationships with our customers.
             </p>
-            <a href={resume} download="Mukesh-Software-Developer">
-            <button
-              className="btn text-bold mt-3 mb-5"
-            > 
-              DOWNLOAD RESUME{" "}
-              <FontAwesomeIcon icon={faDownload} style={{ marginLeft: 5 }} /> 
-            </button>
-            </a>
           </div>
 
           <div className="col-md-5 mt-md-5 ">
-            <h5 className="text-bold mb-2">Education</h5>
+            <h5 className="text-bold mb-2">Adress</h5>
             <p className="text-grey mt-3 text">
-              Graduated{" "}
-              <span className="text-bold">
-                Bachelors in Mechanical Engineering
-              </span>{" "}
-              at Rohini College of Engineering & Technology affliated to Anna
-              University with <span className="text-bold">7.89 CGPA</span> on
-              July 2022.
-            </p>
+              📍 Miss-T Stationary
+               123, Main Road,
+               Near Bus Stand,
+               Pondichery– 625001,
+               India.  </p>
             <p className="text-grey text">
-              Completed my 12th class with 60.4% on April 2018 and 10th class
-              with 76.4% on April 2016 at SM.SM highier secondary school,
-              TamilNadu.
+              📞 +91 98765 43210
+              </p>
+              <p className="text-grey text">
+            📧 misst@gmail.com
+            </p>
+            <p className="mt-2 text-grey text">
+              {" "}
+             Thank you for choosing <span className="text-bold">Miss-T Stationary</span>{" "}✨
             </p>
             <p className="mt-2 mt-md-3 mb-5"></p>
           </div>

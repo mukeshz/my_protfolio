@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import "./Dashboard.scss";
+import MyImage from "../assets/MyImage.png";
+import bg from "../assets/netflix-project.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons";
 import Skills from "../Components/Skills/Skills";
@@ -27,30 +29,32 @@ function Menubar() {
         }}
       >
         <nav className="nav container-lg">
-          <div className="d-flex align-items-center text-color"><h5 className="logo text-bold">&lt;WebDev /&gt;</h5></div>
+          <div className="d-flex align-items-center text-color">
+            <h5 className="logo text-bold">Miss-T</h5>
+          </div>
           <ul className={`${isMobile ? "nav-mobile" : "nav-links"} mt-md-3`}>
             <li className="isMobile nav-bot">
-              <a href="#home" aria-current="page" >
+              <a href="#home" aria-current="page">
                 HOME
               </a>
             </li>
             <li className="nav-bot">
-              <a href="#about" aria-current="page" >
+              <a href="#about" aria-current="page">
                 ABOUT
               </a>
             </li>
             <li className="nav-bot">
-              <a href="#skills" aria-current="page" >
-                SKILLS
+              <a href="#skills" aria-current="page">
+                PRODUCTS
               </a>
             </li>
             <li className="nav-bot">
-              <a href="#projects" aria-current="page" >
-                PROJECTS
+              <a href="#projects" aria-current="page">
+                REVIEWS
               </a>
             </li>
             <li>
-              <a href="#contact" aria-current="page" >
+              <a href="#contact" aria-current="page">
                 CONTACT
               </a>
             </li>
@@ -69,7 +73,14 @@ function Menubar() {
 
       <div className="pt-5"></div>
 
-      <div style={{ backgroundColor: "#EDEDED" }}>
+      <div
+        style={{
+          backgroundImage: `url(${bg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: "100vh",
+        }}
+      >
         <Home />
       </div>
 

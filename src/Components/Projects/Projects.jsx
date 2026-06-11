@@ -9,25 +9,19 @@ import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 function Projects() {
   const skills = [
     {
-      img: iskcon,
-      name: "ISKCON KANYAKUMARI",
+      name: "Ravi Kumar",
       detail:
-        "Temple management website, logged-in admins only add, edit, and delete contents. Integrated Redux for multi-languages and authentication.",
-      link: "https://iskcon-kanyakumari-fc9dd.web.app/",
+        "I bought a set of pencils from this shop and the quality is very good. They write smoothly and are perfect for daily use.",
     },
     {
-      img: archover,
-      name: "ARCHOVER SOLUTIONS",
+      name: "Priya",
       detail:
-        "It is a consultancy services company website designed and developed in ReactJS with bootstrap for the responsive and user friendly interface.",
-      link: "https://archover-solutions-8ecb3.web.app/",
+        "The pen set I purchased works really well and feels comfortable to use. The ink flow is smooth and consistent.",
     },
     {
-      img: netflix,
-      name: "NETFLIX CLONE",
+      name: "Arun Raj",
       detail:
-        "I developed a Netflix clone using React.js, Bootstrap, SASS and MUI showcasing my proficiency in front-end development and design.",
-      link: "https://my-dupe-web.onrender.com/",
+        "I bought a pack of erasers and they erase neatly without damaging the paper. The quality is excellent for students.",
     },
   ];
 
@@ -35,30 +29,16 @@ function Projects() {
     <>
       <div className="pt-md-4"></div>
       <div className="container-md pb-5" id="about">
-        <h1 className="text-bold pt-4 pt-lg-5 text-center pb-1">PROJECTS</h1>
+        <h1 className="text-bold pt-4 pt-lg-5 text-center pb-1">REVIEWS</h1>
         <div className="custom-line" />
         <div className="skill-row mt-2">
           {skills.map((item, index) => (
             <div className="col-12 col-lg-4 d-flex justify-content-center align-items-center mt-5">
               <div key={index} className="card shadow mx-lg-3">
-                <img
-                  src={item.img}
-                  alt={"image" + index}
-                  className="project-img border card-img img-fluid"
-                />
                 <p className="text-center text-bold pt-3 text-grey">
                   {item.name}
                 </p>
                 <p className="text-center text text-grey px-1">{item.detail}</p>
-                <p
-                  className="text-bold text-center text-color live-link"
-                  onClick={() => {
-                    window.open(`${item.link}`, "_blank");
-                  }}
-                >
-                  Checkout Live{" "}
-                  <FontAwesomeIcon icon={faArrowRight} className="arrow-icon" />
-                </p>
               </div>
             </div>
           ))}
