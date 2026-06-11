@@ -3,6 +3,7 @@ import "./Skills.scss";
 import html from "../../assets/html.png";
 import css from "../../assets/css.png";
 import js from "../../assets/js.png";
+import ts from "../../assets/ts.png";
 import react from "../../assets/react.png";
 import redux from "../../assets/redux.png";
 import bootstrap from "../../assets/bootstrap.png";
@@ -14,14 +15,14 @@ import postman from "../../assets/postman.png";
 
 function Skills() {
   const skills = [
-    { img: html, name: "20 Pencils", price: "Rs.200" },
-    { img: css, name: "7 Erasers", price: "Rs.100" },
-    { img: js, name: "5 Sarpners", price: "Rs.80" },
-    { img: bootstrap, name: "4 candles", price: "Rs.180" },
-    { img: react, name: "Highlighhter", price: "Rs.400" },
-    { img: git, name: "Stapler", price: "Rs.120" },
-    { img: api, name: "5 Notebook", price: "Rs.500" },
-    { img: postman, name: "Desk", price: "Rs.700" },
+    { img: html, name: "Html" },
+    { img: css, name: "CSS" },
+    { img: js, name: "Javascript" },
+    { img: bootstrap, name: "Bootstrap" },
+    { img: react, name: "React" },
+    { img: git, name: "Git" },
+    { img: api, name: "API" },
+    { img: postman, name: "Postman" },
     //{ img: ts, name: "Typescript" },
     //{ img: mui, name: "Material UI" },
     //{ img: redux, name: "Redux" },
@@ -32,7 +33,7 @@ function Skills() {
     <>
       <div className="pt-md-4"></div>
       <div className="container-md pb-5" id="about">
-        <h1 className="text-bold pt-4 pt-lg-5 text-center pb-1">PRODUCTS</h1>
+        <h1 className="text-bold pt-4 pt-lg-5 text-center pb-1">SKILLS</h1>
         <div className="custom-line" />
         <div className="skill-row mt-4 pt-1">
           {skills.map((item, index) => (
@@ -43,8 +44,9 @@ function Skills() {
                   alt={"image" + index}
                   className="skill-img img img-fluid"
                 />
-                <p className="pt-2 text-grey">{item.name}</p>
-                <p className="text-bold  text-grey">{item.price}</p>
+                <p className="text-center text-bold pt-2 text-grey">
+                  {item.name}
+                </p>
               </div>
             </div>
           ))}
